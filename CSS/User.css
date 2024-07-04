@@ -1,0 +1,652 @@
+html {
+    scrollbar-color: #10af70 #dcdcdc;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #e0ebe6;
+    overflow-x: hidden;
+}
+
+#menu {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+#menu i {
+    font-size: 27px;
+    margin: 15px 10px;
+    color: #151515;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#menu i:hover {
+    color: #10af70;
+}
+
+#menu ul {
+    background-color: rgba(255, 255, 255, .7);
+    width: 150px;
+    height: 100vh;
+    position: absolute;
+    right: -150px;
+    top: 0;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    transition: .3s;
+    z-index: 999;
+}
+
+.right {
+    right: 0 !important;
+    transition: .3s;
+}
+
+#menu li:first-child {
+    margin-top: 70px;
+}
+
+#menu li {
+    width: 100%;
+    height: 30px;
+    margin: 30px auto;
+    list-style: none;
+    cursor: pointer;
+}
+
+#menu a {
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    margin: 0 auto;
+    transition: .3s;
+}
+
+#menu li:hover a {
+    color: #10af70 !important;
+}
+
+main {
+    margin-top: 50px;
+}
+
+#user-icon {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+#sidebar-user {
+    background-color: white;
+    width: 260px;
+    position: absolute;
+    left: -260px;
+    top: 30px;
+    border-radius: 0 20px 20px 0;
+    padding: 10px 0;
+    transition: .3s;
+    z-index: 999;
+}
+
+.left {
+    left: 0 !important;
+    transition: .3s;
+}
+
+#img-user {
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+#name-user {
+    text-align: left;
+    width: 150px;
+    margin-left: 20px;
+}
+
+#name-user h4,
+h6 {
+    margin-bottom: .1rem;
+}
+
+.bg {
+    background-color: #10af70 !important;
+    color: white !important;
+    transition: .1s;
+}
+
+#name-user i:hover {
+    color: #10af70;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#sidebar {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 5px 10px;
+    flex-direction: column;
+}
+
+.sidebar-item {
+    cursor: pointer;
+    width: 190px;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+    transition: .1s;
+}
+
+#sidebar i {
+    margin: 2px 5px;
+    font-size: 22px;
+    float: left;
+}
+
+#sidebar h5 {
+    float: left;
+    margin-left: 10px;
+}
+
+#badge {
+    float: right;
+    color: #10af70;
+    background-color: #caf5e5;
+    padding: 1px 7px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#top-main {
+    width: 100%;
+    background-color: white;
+    margin: 15px auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    display: flex;
+}
+
+#top-main img {
+    margin-left: 15px;
+    margin-right: auto;
+}
+
+#top-main i:last-child {
+    margin-right: 25px;
+}
+
+#top-main i {
+    font-size: 22px;
+    margin: 30px 10px;
+    cursor: pointer;
+}
+
+#cast {
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#cast i {
+    color: #10af70;
+    font-size: 35px;
+    padding: 15px 10px;
+    float: left;
+}
+
+#cast h3 {
+    font-size: 30px;
+    float: left;
+    padding: 13px 5px;
+}
+
+#cast .cast-item {
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+}
+
+#cast .cast-item img {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+#cast .cast-item h4 {
+    padding-top: 18px;
+    font-size: 22px;
+}
+
+#cast .cast-item h6 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #10af70;
+}
+
+#cast a {
+    float: right;
+    margin: 15px 20px;
+    text-decoration: none;
+    color: #10af70;
+}
+
+#cast a:hover {
+    color: #0d8152;
+}
+
+#wallet {
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding-bottom: 7px;
+}
+
+#wallet i {
+    font-size: 35px;
+    color: #10af70;
+    padding: 15px 10px;
+    float: left;
+}
+
+#wallet h3 {
+    padding: 15px 10px;
+    display: inline-block;
+    font-size: 30px;
+}
+
+#wallet h4 {
+    padding: 0 10px;
+    opacity: .9;
+    font-size: 20px;
+}
+
+#wallet h6 {
+    font-size: 20px;
+    padding: 0 10px;
+    color: #10af70;
+    font-weight: bold;
+}
+
+#wallet .wallet-data {
+    width: 90%;
+    background-color: #ccc;
+    height: 20px;
+    margin: 25px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#wallet .wallet-data:first-child {
+    margin-top: 35px;
+}
+
+#euro {
+    width: 70%;
+    background-color: rgb(240, 107, 107);
+    height: 100%;
+}
+
+#dollar {
+    width: 50%;
+    background-color: rgb(240, 107, 107);
+    height: 100%;
+}
+
+#usdt {
+    width: 45%;
+    background-color: rgb(240, 107, 107);
+    height: 100%;
+}
+
+#wallet .wallet-data span {
+    position: relative;
+    bottom: 3px;
+    left: 5px;
+    color: white;
+}
+
+.percent {
+    float: right !important;
+    margin-bottom: 10px !important;
+    position: relative !important;
+    bottom: 3px !important;
+    right: 10px !important;
+    left: 0 !important;
+}
+
+#wallet a {
+    float: right;
+    text-decoration: none;
+    margin: 5px 10px;
+    color: #10af70;
+    font-size: 18px;
+
+}
+
+#wallet a:hover {
+    color: #0d8152;
+}
+
+#Withdraw {
+    color: black !important;
+    opacity: .6;
+}
+
+#Withdraw:hover {
+    color: black !important;
+    opacity: .8;
+}
+
+#wishlist {
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+#wishlist i {
+    font-size: 35px;
+    color: #10af70;
+    padding: 15px 10px;
+    float: left;
+}
+
+#wishlist h3 {
+    padding: 15px 5px;
+    display: inline-block;
+    font-size: 30px;
+}
+
+#wishlist .wishlist-item {
+    width: 100%;
+    display: inline-block;
+    padding: 5px;
+}
+
+#wishlist .wishlist-item img {
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+
+#wishlist .wishlist-item h4 {
+    padding-top: 15px;
+    font-size: 22px;
+}
+
+#wishlist .wishlist-item h6 {
+    color: #10af70;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#wishlist a {
+    float: right;
+    padding: 12px 8px;
+    text-decoration: none;
+    color: #10af70;
+}
+
+#wishlist a:hover {
+    color: #0d8152;
+}
+
+#see-all {
+    color: black !important;
+    opacity: .6;
+    margin-right: 10px;
+}
+
+#see-all:hover {
+    color: black !important;
+    opacity: .8;
+}
+
+#orders {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 15px;
+    overflow-x: auto;
+    padding-bottom: 70px;
+}
+
+#orders i {
+    font-size: 30px;
+    padding: 15px 10px;
+    color: #10af70;
+    float: left;
+}
+
+#orders h3 {
+    padding: 15px;
+    display: inline-block;
+
+}
+
+#orders thead {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+}
+
+#orders th {
+    width: 300px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+#orders td img {
+    width: 80px;
+    height: 80px;
+    float: left;
+
+}
+
+#orders td h4 {
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+#tickets {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+#tickets i {
+    font-size: 30px;
+    color: #10af70;
+    float: left;
+    padding: 15px 10px;
+}
+
+#tickets h3 {
+    font-size: 30px;
+    padding: 15px 10px;
+    display: inline-block;
+}
+
+#tickets table {
+    width: 100%;
+}
+
+#tickets thead {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding-left: 15px;
+}
+
+#tickets thead th {
+    width: 300px;
+}
+
+#tickets a {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    color: #10af70;
+    text-decoration: none;
+}
+
+#tickets a:hover {
+    color: #0d8152;
+}
+
+#footer {
+    width: 100%;
+    background-color: white;
+    margin-top: 100px;
+    padding-top: 30px;
+    text-align: center;
+
+}
+
+#footer ul {
+    width: 200px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#footer ul li {
+    list-style: none;
+    margin: 10px auto;
+}
+
+#footer ul li:first-child {
+    font-size: 35px;
+    font-weight: 500;
+    color: black;
+}
+
+#footer ul li a {
+    color: #151515;
+    text-decoration: none;
+}
+
+#footer img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+#footer i {
+    font-size: 25px;
+    position: relative;
+    top: 5px;
+    margin: 0 5px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#footer i:hover {
+    color: #0d8152;
+}
+
+#bottom-footer {
+    text-align: center;
+    padding: 5px 0;
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+#bottom-footer i {
+    font-size: 25px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #151515;
+    cursor: pointer;
+}
+#bottom-footer i:hover{
+    color: black;
+}
+#bottom-footer span {
+    font-size: 22px;
+    margin-right: 5px;
+    color: #0d8152;
+}
+
+/* sm */
+@media (min-width: 576px) {}
+
+/* md */
+@media (min-width: 768px) {
+    #menu i {
+        display: none;
+    }
+
+    #menu ul {
+        background-color: white;
+        width: 100%;
+        position: static;
+        height: auto;
+        text-align: left;
+    }
+
+    #menu li:first-child {
+        margin-top: 0;
+        margin-left: 30px !important;
+    }
+
+    #menu li {
+        display: inline-block !important;
+        width: 120px;
+        margin: 0;
+        padding: 15px 0 45px 0;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    #menu li::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #10af70;
+        transform: scaleX(0);
+        transition: transform 400ms ease-in-out;
+        padding-top: 18px;
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    #menu li:hover:after {
+        transform: scaleX(1);
+    }
+
+    #user-icon i {
+        display: block !important;
+    }
+}
+
+/* lg */
+@media (min-width: 992px) {
+    #sidebar-user {
+        left: 0;
+    }
+
+    #user-icon i {
+        display: none !important;
+    }
+}
+
+/* xl */
+@media (min-width: 1200px) {
+    #wallet {
+        margin-top: 0;
+    }
+
+    #wishlist {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Panel</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/User.css">
+    <script src="https://kit.fontawesome.com/1daaf569d9.js" crossorigin="anonymous"></script>
+    <script src="JS/jquery.js"></script>
+    <script src="JS/User-jquery.js"></script>
+    <script>
+        $(function () {
+            $('#menu-icon i').on('click', function (event) {
+                $('#menu ul').toggleClass('right');
+                $('#menu-icon i').toggleClass('fa-close')
+
+            })
+            $('#user-icon i').on('click', function () {
+                $('#sidebar-user').toggleClass('left')
+            })
+            $('.sidebar-item').on('click', function () {
+                $('.sidebar-item').removeClass('bg')
+                $(this).toggleClass('bg')
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <nav id="menu">
+        <div id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+            <li><a href="#">All Categories</a></li>
+            <li><a href="#">New Releases</a></li>
+            <li><a href="#">Best Seller</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contect Us</a></li>
+        </ul>
+        <div id="user-icon">
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </nav>
+    <main>
+        <div class="row">
+            <div class="col-lg-3">
+                <div id="sidebar-user">
+                    <div class="row">
+                        <div id="img-user">
+                            <img src="CSS/IMAGE/User-img.jpg.png" alt="">
+                        </div>
+                        <div id="name-user">
+                            <h4>User Name</h4>
+                            <h6>+1087509540</h6>
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <div id="sidebar">
+                            <div class="sidebar-item bg">
+                                <i class="fas fa-grip-vertical"></i>
+                                <h5>Dashboard</h5>
+                            </div>
+                            <div class="sidebar-item">
+                                <i class="fa fa-download"></i>
+                                <h5>Download</h5>
+                            </div>
+                            <div class="sidebar-item">
+                                <i class="far fa-bell"></i>
+                                <h5>Notification</h5>
+                            </div>
+                            <div class="sidebar-item">
+                                <i class="far fa-clipboard"></i>
+                                <h5>Orders</h5>
+                                <span id="badge">2</span>
+                            </div>
+                            <div class="sidebar-item">
+                                <i class="fas fa-shopping-basket"></i>
+                                <h5>Cart</h5>
+                            </div>
+                            <div class="sidebar-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h5>Adress</h5>
+                            </div>
+                            <div class="sidebar-item">
+                                <i class="far fa-heart"></i>
+                                <h5>Wishlist</h5>
+                            </div>
+                            <div class="sidebar-item">
+                                <i class="fas fa-wallet"></i>
+                                <h5>Wallet</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-9">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="top-main">
+                                <img src="CSS/IMAGE/top-main/name-company.png">
+                                <i class="fa fa-search"></i>
+                                <i class="far fa-bell"></i>
+                                <i class="fa fa-gear"></i>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-sm-12 col-xl-4">
+                                    <div id="cast" class="clearfix">
+                                        <i class="fas fa-shopping-basket"></i>
+                                        <h3>Cast</h3>
+                                        <div class="cast-item">
+                                            <img src="CSS/IMAGE/phone/aplle watch.png" alt="">
+                                            <h4>Apple Watch Pro 350</h4>
+                                            <h6>150$</h6>
+                                        </div>
+                                        <div class="cast-item">
+                                            <img src="CSS/IMAGE/phone/iphone15.png" alt="">
+                                            <h4>IPhone 15 Pro Max</h4>
+                                            <h6>200$</h6>
+                                        </div>
+                                        <a href="#">Completion</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-xl-4">
+                                    <div id="wallet" class="clearfix">
+                                        <i class="fas fa-wallet"></i>
+                                        <h3>Wallet</h3>
+                                        <h4>Yuor wallet balance</h4>
+                                        <h6>2000 $</h6>
+                                        <div class="wallet-item">
+                                            <div class="wallet-data">
+                                                <div id="euro">
+                                                    <span>Euro</span>
+                                                    <span class="percent">70%</span>
+                                                </div>
+                                            </div>
+                                            <div class="wallet-data">
+                                                <div id="dollar">
+                                                    <span>Dollar</span>
+                                                    <span class="percent">50%</span>
+                                                </div>
+                                            </div>
+                                            <div class="wallet-data">
+                                                <div id="usdt">
+                                                    <span>USDT</span>
+                                                    <span class="percent">45%</span>
+                                                </div>
+                                            </div>
+                                            <a href="#" id="Withdraw">Withdraw</a>
+                                            <a href="#">Add credit</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-xl-4">
+                                    <div id="wishlist" class="clearfix">
+                                        <i class="fas fa-heart"></i>
+                                        <h3>Wishlist</h3>
+                                        <div class="wishlist-item">
+                                            <img src="CSS/IMAGE/phone/s24ultra.png" alt="">
+                                            <h4>Samsung S24 Ultra</h4>
+                                            <h6>200$</h6>
+                                        </div>
+                                        <div class="wishlist-item">
+                                            <img src="CSS/IMAGE/phone/iphone15.png" alt="">
+                                            <h4>IPhone 15 Pro Max</h4>
+                                            <h6>200$</h6>
+                                        </div>
+                                        <a href="#" id="see-all">See All</a>
+                                        <a href="#">Add to cart</a>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div id="orders">
+                                        <i class="fas fa-cart-arrow-down"></i>
+                                        <h3>Orders</h3>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Prise</th>
+                                                    <th>Date</th>
+                                                    <th>Order Number</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div id="tickets" class="clearfix">
+                                        <i class="far fa-comments"></i>
+                                        <h3>Tickets</h3>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Title</th>
+                                                    <th>Department</th>
+                                                    <th>Priority</th>
+                                                    <th>Date</th>
+                                                    <th>Ticket Number</th>
+                                                    <th>Status</th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+                                        <a href="#">Send new</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-xl-3">
+                    <ul>
+                        <li>About</li>
+                        <li><a href="#">Policies</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Impact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-3">
+                    <ul>
+                        <li>Service</li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Contact US</a></li>
+                        <li><a href="#">Order Status</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-3">
+                    <ul>
+                        <li>Shop</li>
+                        <li><a href="#">Gift Casds</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-6 col-xl-3">
+                    <ul>
+                        <li>Help</li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Setting</a></li>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <div id="social">
+                        <img src="CSS/IMAGE/top-main/name-company.png">
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-telegram"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="bottom-footer">
+        <i class="fab fa-github"></i><h5><span>&copy;</span>1996-2024, kawidesign, lnc or its affiliates</h5>
+    </div>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/User.js"></script>
+</body>
+
+</html>
